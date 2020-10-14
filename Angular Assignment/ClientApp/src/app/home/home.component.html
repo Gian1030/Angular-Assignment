@@ -1,0 +1,21 @@
+<h1 id="tableLabel">Menu Items</h1>
+
+
+<p *ngIf="!MenuItems && MenuItems.length >0"><em>Loading...</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="border:1px solid #000000;"> Id </th>
+      <th style="border:1px solid #000000;"> Name </th>
+      <th style="border:1px solid #000000;"> Price </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let menuItems of MenuItems">
+      <td style="border:1px solid #000000;"> {{menuItems.id}} </td>
+      <td style="border:1px solid #000000;"> {{menuItems.name}} </td>
+      <td style="border:1px solid #000000;"> {{menuItems.price}} </td>
+    </tr>
+  </tbody>
+</table>
